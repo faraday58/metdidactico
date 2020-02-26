@@ -4,4 +4,6 @@
     <string name="maingStringHintNombre">Nombre</string>
     <string name="mainStringHintCorreo">correo</string>
     <string name="mainStringHintPassword">Contraseña</string>
+    <string name="strBotonIngresar">Ingresar</string>
+    <string name="strBotonCrear">Crear</string>
 </resources>

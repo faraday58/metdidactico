@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/edtCorreoMain"
+        android:id="@+id/btnCrearLogin"
         android:layout_width="350dp"
         android:textColor="@color/colorTextIconos"
         android:textColorHint="@color/colorAccent"
@@ -59,18 +59,29 @@
         android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCorreoMain" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearLogin" />
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/strBotonIngresar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCrearMain"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordMain" />
+
+    <Button
+        android:id="@+id/btnCrearMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="92dp"
         android:layout_marginRight="92dp"
-        android:id="@+id/btnCrearMain"
-        android:text="Crear"
+        android:text="@string/strBotonCrear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPasswordMain" />
 

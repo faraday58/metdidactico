@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Relacionando objetos Java con los objetos XML
         edtNombre = findViewById(R.id.edtNombreMain);
-        edtCorreo = findViewById(R.id.edtCorreoMain);
+        edtCorreo = findViewById(R.id.btnCrearLogin);
         edtPassword= findViewById(R.id.edtPasswordMain);
         btnCrear = findViewById(R.id.btnCrearMain);
 
@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(), "Te haz registrado con éxito: " + Nombre , Toast.LENGTH_SHORT).show();
                     Intent intentLogin= new Intent(getApplicationContext() ,LoginActivity.class);
+                    intentLogin.putExtra(getString(R.string.mainStringHintCorreo),Correo );
+                    intentLogin.putExtra(getString(R.string.mainStringHintPassword),Contraseña);
                     startActivity(intentLogin);
 
                 }

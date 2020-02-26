@@ -4,4 +4,6 @@
     <string name="mainStringTextViewCrea">Create Account</string>
     <string name="mainStringHintCorreo">Email</string>
     <string name="mainStringHintPassword">Password</string>
+    <string name="strBotonIngresar">Login</string>
+    <string name="strBotonCrear">Sign Up</string>
 </resources>
