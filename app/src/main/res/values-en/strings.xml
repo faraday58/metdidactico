@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="maingStringHintNombre">Name</string>
+    <string name="mainStringTextViewCrea">Create Account</string>
+    <string name="mainStringHintCorreo">Email</string>
+    <string name="mainStringHintPassword">Password</string>
+</resources>
