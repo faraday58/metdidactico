@@ -53,8 +53,9 @@ public class LoginActivity extends AppCompatActivity {
     View.OnClickListener onClikCrear = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intenCrear = new Intent(getApplicationContext(),MainActivity.class);
+            Intent intenCrear = new Intent(getApplicationContext(), RegistroActivity.class);
             startActivity(intenCrear);
+            finish();
 
         }
     };

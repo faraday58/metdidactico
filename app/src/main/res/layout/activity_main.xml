@@ -1,88 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundtextil"
     tools:context=".MainActivity">
 
-    <!--Modificando ancho -->
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="100dp"
+    <FrameLayout
+        android:id="@+id/fragContentMain"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/mainStringTextViewCrea"
-        android:textColor="@color/colorTextIconos"
-        android:textSize="30sp"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edtNombreMain"
-        android:hint="@string/maingStringHintNombre"
-        android:textColor="@color/colorTextIconos"
-        android:textColorHint="@color/colorAccent"
-        android:inputType="textPersonName"
-        android:layout_width="350dp"
+        android:layout_above="@+id/btnNavPrincipal"
+        android:background="@color/colorAccent"
+        />
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:id="@+id/btnNavPrincipal"
+        app:menu="@menu/menu_boton_navigation"
+        android:layout_alignParentBottom="true"
+        />
 
-    <EditText
-        android:id="@+id/btnCrearLogin"
-        android:layout_width="350dp"
-        android:textColor="@color/colorTextIconos"
-        android:textColorHint="@color/colorAccent"
-        android:inputType="textEmailAddress"
-        android:hint="@string/mainStringHintCorreo"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtNombreMain" />
-
-    <EditText
-        android:id="@+id/edtPasswordMain"
-        android:hint="@string/mainStringHintPassword"
-        android:textColor="@color/colorTextIconos"
-        android:textColorHint="@color/colorAccent"
-        android:inputType="textPassword"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCrearLogin" />
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="@string/strBotonIngresar"
-        app:layout_constraintEnd_toStartOf="@+id/btnCrearMain"
-        app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPasswordMain" />
-
-    <Button
-        android:id="@+id/btnCrearMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginRight="92dp"
-        android:text="@string/strBotonCrear"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPasswordMain" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

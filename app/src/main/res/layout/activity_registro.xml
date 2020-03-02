@@ -14,7 +14,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Iniciar sesión"
+        android:text="@string/mainStringTextViewCrea"
         android:textColor="@color/colorTextIconos"
         android:textSize="30sp"
         app:layout_constraintHorizontal_bias="0.472"
@@ -22,23 +22,35 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <EditText
-        android:id="@+id/edtCorreoLogin"
-        android:layout_width="350dp"
+        android:id="@+id/edtNombreMain"
+        android:hint="@string/maingStringHintNombre"
         android:textColor="@color/colorTextIconos"
         android:textColorHint="@color/colorAccent"
-        android:inputType="textEmailAddress"
-        android:hint="Correo"
+        android:inputType="textPersonName"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/edtPasswordLogin"
-        android:hint="Password"
+        android:id="@+id/btnCrearLogin"
+        android:layout_width="350dp"
+        android:textColor="@color/colorTextIconos"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="textEmailAddress"
+        android:hint="@string/mainStringHintCorreo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombreMain" />
+
+    <EditText
+        android:id="@+id/edtPasswordMain"
+        android:hint="@string/mainStringHintPassword"
         android:textColor="@color/colorTextIconos"
         android:textColorHint="@color/colorAccent"
         android:inputType="textPassword"
@@ -47,31 +59,30 @@
         android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCorreoLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearLogin" />
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/strBotonIngresar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCrearMain"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordMain" />
+
+    <Button
+        android:id="@+id/btnCrearMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="92dp"
         android:layout_marginRight="92dp"
-        android:id="@+id/btnIngresarLogin"
-        android:text="@string/strBotonIngresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPasswordLogin" />
-
-    <Button
-        android:id="@+id/btnCrearLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="68dp"
         android:text="@string/strBotonCrear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPasswordLogin" />
-
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordMain" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

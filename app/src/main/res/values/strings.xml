@@ -6,4 +6,8 @@
     <string name="mainStringHintPassword">Contraseña</string>
     <string name="strBotonIngresar">Ingresar</string>
     <string name="strBotonCrear">Crear</string>
+    <string name="nav_menu_inicio">Inicio</string>
+    <string name="nav_menu_buscar">Buscar</string>
+    <string name="nav_menu_carrito">Carrito</string>
+    <string name="nav_menu_registro">Registrar</string>
 </resources>
