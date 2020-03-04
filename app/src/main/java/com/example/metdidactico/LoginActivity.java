@@ -2,6 +2,7 @@ package com.example.metdidactico;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -65,8 +66,28 @@ public class LoginActivity extends AppCompatActivity {
     View.OnClickListener onClickIngresar = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
+
+           new Thread(new Runnable() {
+               @Override
+               public void run() {
+                   try
+                   {
+                       BuscarUsuario();
+                   }
+                   catch (InterruptedException e)
+                   {
+                       Log.d("error",e.getMessage());
+                   }
+                   Log.d("Hilo","Hilo Terminado");
+               }
+
+           }).start();
+
             if( edtCorreo.getText().toString().equals(correo) && edtPassword.getText().toString().equals(password)  )
             {
+
+
                 Toast.makeText(getApplicationContext(),"Bienvenido, haz ingresado correctamente",Toast.LENGTH_SHORT).show();
             }
             else
@@ -75,6 +96,22 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
     };
+
+    public  void BuscarUsuario() throws InterruptedException {
+
+        for(int i=0; i< 15; i++)
+        {
+            Thread.sleep(1000);
+            Log.d("Segundos","Tiempo de busqueda: " +i +"[s]" );
+
+        }
+
+
+
+    }
+
+
+
 
 
 

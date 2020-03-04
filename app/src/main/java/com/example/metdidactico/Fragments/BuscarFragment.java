@@ -11,12 +11,12 @@ import androidx.fragment.app.Fragment;
 
 import com.example.metdidactico.R;
 
-public class CarritoFragment extends Fragment {
+public class BuscarFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-         View v= inflater.inflate(R.layout.fragment_carrito,container,false);
+         View v= inflater.inflate(R.layout.fragment_buscar,container,false);
         return v ;
     }
 }
