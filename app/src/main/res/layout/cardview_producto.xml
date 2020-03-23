@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,10 +10,20 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+=======
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    app:cardCornerRadius="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+>>>>>>> Comunicación entre fragments
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtvCVTitulo"
+<<<<<<< HEAD
             android:text="Entrena"
             android:textSize="45sp"
             android:gravity="center"
@@ -29,15 +40,48 @@
             android:layout_height="30dp"
             android:id="@+id/txtvCVDescribe"
             android:gravity="center"
+=======
+            android:text="Entrenar"
+            android:textSize="32sp"
+            android:gravity="center"
+            />
+
+        <ImageButton
+            android:id="@+id/imgbCVproducto"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/entrena"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:id="@+id/txtvCVDescribe"
+>>>>>>> Comunicación entre fragments
             android:text="Entrena en el lugar que quieras"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:id="@+id/btnCVcoleccion"
             android:text="¡Vamos a la colección!"
             />
 
     </LinearLayout>
 
+=======
+            android:text="¡Vamos a la colección!"
+            android:id="@+id/btnCVcoleccion"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+>>>>>>> Comunicación entre fragments
 </androidx.cardview.widget.CardView>

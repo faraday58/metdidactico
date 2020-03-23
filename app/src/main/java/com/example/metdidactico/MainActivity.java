@@ -10,11 +10,13 @@ import android.view.MenuItem;
 import com.example.metdidactico.Fragments.BuscarFragment;
 import com.example.metdidactico.Fragments.CarritoFragment;
 import com.example.metdidactico.Fragments.InicioFragment;
+import com.example.metdidactico.Fragments.ProductosFragment;
 import com.example.metdidactico.Fragments.UsuarioFragment;
+import com.example.metdidactico.RecyclerViews.AdaptadorMuestraProducto;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdaptadorMuestraProducto.IColecProductos {
 
     BottomNavigationView btnNavPrincipal;
     Fragment fragmentSeleccionado;
@@ -57,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
     };
 
 
+    @Override
+    public void ClickProduccion(String Titulo) {
+        fragmentSeleccionado = new ProductosFragment(Titulo);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragContentMain,fragmentSeleccionado).commit();
 
-
+    }
 }
